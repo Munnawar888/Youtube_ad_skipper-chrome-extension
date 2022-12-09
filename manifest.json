@@ -1,0 +1,28 @@
+{
+    "version": "1.0",
+    "manifest_version": 3,
+    "name": "Youtube AdSkipper",
+    "description": "This extension is help in automatically skip the youtube ads",
+    "content_scripts": [{
+        "matches": ["https://www.youtube.com/*"],
+        "run_at": "document_idle",
+        "js": ["content.js"]
+    }],
+    "icons": {
+        "16": "images/16.png",
+        "64": "images/64.png",
+        "128": "images/128.png"
+    },
+    "action": {
+        "default_icons": {
+            "16": "images/16.png",
+            "64": "images/64.png",
+            "128": "images/128.png"
+        },
+        "default_title": "Youtube AdSkipper"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ]
+}
